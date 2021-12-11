@@ -6,6 +6,19 @@
 	<string>com.bryankyle.emacs</string>
 	<key>connections</key>
 	<dict>
+		<key>9AA9E137-5F20-444D-B157-31E17FAE1731</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>81AEEF68-1226-4D3D-A0C3-6916E5C1D572</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C682D27F-32A1-4504-A64A-8BD0E32F99FB</key>
 		<array>
 			<dict>
@@ -46,23 +59,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-  tell application "Finder" to return POSIX path of (target of first window as alias)
-end alfred_script</string>
-				<key>cachescript</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>C682D27F-32A1-4504-A64A-8BD0E32F99FB</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -98,12 +94,29 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+  tell application "Finder" to return POSIX path of (target of first window as alias)
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>C682D27F-32A1-4504-A64A-8BD0E32F99FB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>exec /usr/local/bin/emacsclient --no-wait {query}</string>
+				<string>exec /usr/local/bin/emacsclient --no-wait "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -118,6 +131,23 @@ end alfred_script</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Open in Emacs</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>9AA9E137-5F20-444D-B157-31E17FAE1731</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -125,24 +155,33 @@ end alfred_script</string>
 	<dict>
 		<key>81AEEF68-1226-4D3D-A0C3-6916E5C1D572</key>
 		<dict>
+			<key>note</key>
+			<string>exec emacsclient --no-wait ...</string>
 			<key>xpos</key>
-			<integer>635</integer>
+			<integer>620</integer>
 			<key>ypos</key>
-			<integer>190</integer>
+			<integer>145</integer>
+		</dict>
+		<key>9AA9E137-5F20-444D-B157-31E17FAE1731</key>
+		<dict>
+			<key>xpos</key>
+			<integer>420</integer>
+			<key>ypos</key>
+			<integer>305</integer>
 		</dict>
 		<key>C682D27F-32A1-4504-A64A-8BD0E32F99FB</key>
 		<dict>
 			<key>xpos</key>
-			<integer>430</integer>
+			<integer>415</integer>
 			<key>ypos</key>
-			<integer>190</integer>
+			<integer>145</integer>
 		</dict>
 		<key>DC512497-69C4-4540-8336-6825E44601F4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>235</integer>
+			<integer>220</integer>
 			<key>ypos</key>
-			<integer>190</integer>
+			<integer>145</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
