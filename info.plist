@@ -96,8 +96,8 @@
 			<dict>
 				<key>applescript</key>
 				<string>on alfred_script(q)
-  tell application "Finder" to return POSIX path of (target of first window as alias)
-end alfred_script</string>
+	tell application "Finder"		set s to selection		if length of s = 0 then			return POSIX path of (target of first window as alias)		else if length of s = 1 then			return (POSIX path of (item 1 of s as alias))		end if
+	end tellend alfred_script</string>
 				<key>cachescript</key>
 				<false/>
 			</dict>
