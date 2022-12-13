@@ -6,6 +6,58 @@
 	<string>com.bryankyle.emacs</string>
 	<key>connections</key>
 	<dict>
+		<key>20E8BA0A-F4F2-40B1-B887-79352754A4DC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CF6A6AF4-6E32-4263-8337-4883CC12BB0D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4347FDBA-B73B-4EBB-A968-42D4D36D30D8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>65ABD950-CE8E-4B5D-BEE9-06EB38CC743E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5575CF12-C392-4EAA-B1F9-4CD2E74EC9D3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BF2A67D9-DE1A-4359-BCAF-7C627BD60A7F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>65ABD950-CE8E-4B5D-BEE9-06EB38CC743E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CF6A6AF4-6E32-4263-8337-4883CC12BB0D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>9AA9E137-5F20-444D-B157-31E17FAE1731</key>
 		<array>
 			<dict>
@@ -19,11 +71,38 @@
 				<false/>
 			</dict>
 		</array>
-		<key>C682D27F-32A1-4504-A64A-8BD0E32F99FB</key>
+		<key>A82CE27A-33BD-4654-8F4B-F2CA15636F80</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>BF2A67D9-DE1A-4359-BCAF-7C627BD60A7F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>263824F0-9712-41E7-80AB-EF29D435C55B</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>81AEEF68-1226-4D3D-A0C3-6916E5C1D572</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>D9837AE1-B281-4C96-9FDE-EE542065B528</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CF6A6AF4-6E32-4263-8337-4883CC12BB0D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A82CE27A-33BD-4654-8F4B-F2CA15636F80</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -36,7 +115,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>C682D27F-32A1-4504-A64A-8BD0E32F99FB</string>
+				<string>20E8BA0A-F4F2-40B1-B887-79352754A4DC</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -59,6 +138,164 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>exec "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>BF2A67D9-DE1A-4359-BCAF-7C627BD60A7F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Open in VSCode</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>5575CF12-C392-4EAA-B1F9-4CD2E74EC9D3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>8</integer>
+				<key>hotmod</key>
+				<integer>1310720</integer>
+				<key>hotstring</key>
+				<string>C</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.apple.finder</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>4347FDBA-B73B-4EBB-A968-42D4D36D30D8</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>EDITOR</key>
+					<string>vscode</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>65ABD950-CE8E-4B5D-BEE9-06EB38CC743E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+	tell application "Finder"		set s to selection		if length of s = 0 then			return POSIX path of (target of first window as alias)		else if length of s = 1 then			return (POSIX path of (item 1 of s as alias))		end if
+	end tellend alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>CF6A6AF4-6E32-4263-8337-4883CC12BB0D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:EDITOR}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>vscode</string>
+						<key>outputlabel</key>
+						<string>vscode</string>
+						<key>uid</key>
+						<string>263824F0-9712-41E7-80AB-EF29D435C55B</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:EDITOR}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>emacs</string>
+						<key>outputlabel</key>
+						<string>emacs</string>
+						<key>uid</key>
+						<string>D9837AE1-B281-4C96-9FDE-EE542065B528</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>A82CE27A-33BD-4654-8F4B-F2CA15636F80</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -70,7 +307,7 @@
 				<key>hotkey</key>
 				<integer>14</integer>
 				<key>hotmod</key>
-				<integer>1179648</integer>
+				<integer>1310720</integer>
 				<key>hotstring</key>
 				<string>E</string>
 				<key>leftcursor</key>
@@ -94,17 +331,37 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-	tell application "Finder"		set s to selection		if length of s = 0 then			return POSIX path of (target of first window as alias)		else if length of s = 1 then			return (POSIX path of (item 1 of s as alias))		end if
-	end tellend alfred_script</string>
-				<key>cachescript</key>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
 				<false/>
+				<key>variables</key>
+				<dict>
+					<key>EDITOR</key>
+					<string>emacs</string>
+				</dict>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
+			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>C682D27F-32A1-4504-A64A-8BD0E32F99FB</string>
+			<string>20E8BA0A-F4F2-40B1-B887-79352754A4DC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Open in Emacs</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>9AA9E137-5F20-444D-B157-31E17FAE1731</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -131,59 +388,88 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>Open in Emacs</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>9AA9E137-5F20-444D-B157-31E17FAE1731</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>20E8BA0A-F4F2-40B1-B887-79352754A4DC</key>
+		<dict>
+			<key>xpos</key>
+			<real>310</real>
+			<key>ypos</key>
+			<real>470</real>
+		</dict>
+		<key>4347FDBA-B73B-4EBB-A968-42D4D36D30D8</key>
+		<dict>
+			<key>xpos</key>
+			<real>115</real>
+			<key>ypos</key>
+			<real>265</real>
+		</dict>
+		<key>5575CF12-C392-4EAA-B1F9-4CD2E74EC9D3</key>
+		<dict>
+			<key>xpos</key>
+			<real>585</real>
+			<key>ypos</key>
+			<real>190</real>
+		</dict>
+		<key>65ABD950-CE8E-4B5D-BEE9-06EB38CC743E</key>
+		<dict>
+			<key>xpos</key>
+			<real>310</real>
+			<key>ypos</key>
+			<real>295</real>
+		</dict>
 		<key>81AEEF68-1226-4D3D-A0C3-6916E5C1D572</key>
 		<dict>
 			<key>note</key>
 			<string>exec emacsclient --no-wait ...</string>
 			<key>xpos</key>
-			<integer>620</integer>
+			<real>930</real>
 			<key>ypos</key>
-			<integer>145</integer>
+			<real>500</real>
 		</dict>
 		<key>9AA9E137-5F20-444D-B157-31E17FAE1731</key>
 		<dict>
 			<key>xpos</key>
-			<integer>420</integer>
+			<real>590</real>
 			<key>ypos</key>
-			<integer>305</integer>
+			<real>495</real>
 		</dict>
-		<key>C682D27F-32A1-4504-A64A-8BD0E32F99FB</key>
+		<key>A82CE27A-33BD-4654-8F4B-F2CA15636F80</key>
 		<dict>
 			<key>xpos</key>
-			<integer>415</integer>
+			<real>615</real>
 			<key>ypos</key>
-			<integer>145</integer>
+			<real>365</real>
+		</dict>
+		<key>BF2A67D9-DE1A-4359-BCAF-7C627BD60A7F</key>
+		<dict>
+			<key>note</key>
+			<string>exec emacsclient --no-wait ...</string>
+			<key>xpos</key>
+			<real>930</real>
+			<key>ypos</key>
+			<real>190</real>
+		</dict>
+		<key>CF6A6AF4-6E32-4263-8337-4883CC12BB0D</key>
+		<dict>
+			<key>xpos</key>
+			<real>415</real>
+			<key>ypos</key>
+			<real>345</real>
 		</dict>
 		<key>DC512497-69C4-4540-8336-6825E44601F4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>220</integer>
+			<real>120</real>
 			<key>ypos</key>
-			<integer>145</integer>
+			<real>440</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>webaddress</key>
 	<string></string>
 </dict>
